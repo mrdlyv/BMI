@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>BMI Calculator</title>
+    <link rel="shortcut icon" href="clcltr.png">
+    <style>
+        .container {
+            width: 100%;
+            height: 100px;
+            color: white;
+            background-color: rgb(195, 0, 255);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        p {
+            color: rgb(195, 0, 255);
+        }
+
+        .container2 {
+            height: 120px;
+            width: 350px;
+            background-color: red;
+            color: white;
+            margin-left: 60px;
+        }
+
+        .s {
+            width: 100%;
+            height: 100px;
+            color: white;
+            background-color: rgb(195, 0, 255);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 149px;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI kalkulyator</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tenetur itaque neque placeat nihil maiores
+        iusto eligendi. Facere quos aut nisi. Veritatis, aut quibusdam! Cum atque nisi sed debitis ipsa neque delectus
+        reprehenderit quia praesentium. Maxime, provident? Adipisci perferendis unde autem provident ducimus, totam
+        ullam? Inventore quo ipsam suscipit iste?</p>
+    <div class="container2">
+        <h2 id="ceki"></h2>
+    </div>
+
+    <footer>
+         <p class="s">Design by Murad &copy; 2025</p>
+
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let weight = prompt('Cekinizi daxil edin.')
+        let height = prompt('Boyunuzu daxil edin.')
+        let bmi = weight / (height * height)
+        let netice = document.getElementById('ceki')
+
+        if (bmi < 18) {
+            netice.innerHTML = 'Siz cekiniz azligindan eziyyet cekirsiniz'
+        } else if (bmi < 20) {
+            netice.innerHTML = 'Siz cekiniz azdir. Lakin saglamliq ucun zererli deyil.'
+        }
+        else if (bmi < 26) {
+            netice.innerHTML = 'Sizin cekiniz normaldir. Tebrikler !!!'
+        }
+        else if (bmi < 28) {
+            netice.innerHTML = 'Sizin artiq cekiniz var.'
+        }
+        else if (bmi < 31) {
+            netice.innerHTML = 'Siz, 1-ci dereceli artiq cekiden eziyyet cekirsiniz.'
+        }
+        else if (bmi < 36) {
+            netice.innerHTML = 'Siz, 2-ci dereceli artiq cekiden eziyyet cekirsiniz.'
+        }
+        else if (bmi < 41) {
+            netice.innerHTML = 'Siz, 3-ci dereceli artiq cekiden eziyyet cekirsiniz.'
+        }
+        else if (bmi > 41) {
+            netice.innerHTML = 'Siz, 4-ci dereceli artiq cekiden eziyyet cekirsiniz.'
+        }
+        else {
+            netice.innerHTML = 'Sizin basinizda problem var.'
+        }
+    </script>
+</body>
+
+</html>
