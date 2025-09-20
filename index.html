@@ -7,61 +7,147 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>BMI Calculator</title>
-    <link rel="shortcut icon" href="clcltr.png">
     <style>
-        .container {
-            width: 100%;
-            height: 100px;
-            color: white;
-            background-color: rgb(195, 0, 255);
-            display: flex;
-            justify-content: center;
-            text-align: center;
+        .sos {
+            transition: .4s;
         }
 
-        p {
-            color: rgb(195, 0, 255);
-        }
-
-        .container2 {
-            height: 120px;
-            width: 350px;
-            background-color: red;
-            color: white;
-            margin-left: 60px;
-        }
-
-        .s {
-            width: 100%;
-            height: 100px;
-            color: white;
-            background-color: rgb(195, 0, 255);
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            margin-top: 149px;
-            padding-top: 40px;
+        .sos:hover {
+            scale: 1.2;
         }
     </style>
+    <link rel="shortcut icon" href="clcltr.png">
 </head>
 
 <body>
     <div class="container">
-        <h1>BMI kalkulyator</h1>
-    </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tenetur itaque neque placeat nihil maiores
-        iusto eligendi. Facere quos aut nisi. Veritatis, aut quibusdam! Cum atque nisi sed debitis ipsa neque delectus
-        reprehenderit quia praesentium. Maxime, provident? Adipisci perferendis unde autem provident ducimus, totam
-        ullam? Inventore quo ipsam suscipit iste?</p>
-    <div class="container2">
-        <h2 id="ceki"></h2>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BMI Calculator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#card">Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ftr">Footer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 
-    <footer>
-         <p class="s">Design by Murad &copy; 2025</p>
+    <div class="container mt-3">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image copy.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image copy 2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
+    <h2 id="ceki"></h2>
+
+    <div class="container mt-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="image copy 3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Body mass index (BMI) is a value derived from the mass (weight) and height
+                            of a person. The BMI is defined as the body mass divided by the square of the body height,
+                            and is expressed in units of kg/m2, resulting from mass in kilograms (kg) and height in
+                            metres (m).</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">BMI Calculator</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="image copy 4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="image copy 5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BMI Calculator</h5>
+                        <p class="card-text">Body mass index (BMI) is a value derived from the mass (weight) and height
+                            of a person. The BMI is defined as the body mass divided by the square of the body height,
+                            and is expressed in units of kg/m2, resulting from mass in kilograms (kg) and height in
+                            metres (m).</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Calculator</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5 mt-2" style="height: 100%;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2396.977634421933!2d4.356208476425375!3d50.79870797166075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c5002c567e97%3A0xb17296f3de371c7e!2sRoyal%20Observatory%20of%20Belgium!5e1!3m2!1sru!2saz!4v1758347056440!5m2!1sru!2saz"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container mb-3" style="flex-direction: row;">
+            <a href="https://wa.me/+994993636310">
+                <img src="wp.png" alt="" class="sos" height="30px" width="30px">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="ytb.png" alt="" class="sos" height="30px" width="30px">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="fbk.png" alt="" class="sos" height="30px" width="30px">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="ins.png" alt="" class="sos" height="30px" width="30px">
+            </a>
+            <a href="tel:+994993636310">
+                <img src="phno.png" alt="" class="sos" height="30px" width="30px">
+            </a>
+        </div>
+        Design by Murad &copy; 2025
     </footer>
-   
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
